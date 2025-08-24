@@ -22,7 +22,7 @@ public:
         
         // Check for overflow before returning
         if (ans > INT_MAX && sign) return INT_MAX;
-        if (ans > INT_MAX + 1LL && !sign) return INT_MIN;
+        // if (ans > INT_MAX + 1LL && !sign) return INT_MIN;
         return sign? ans:-ans;
     }
 };
